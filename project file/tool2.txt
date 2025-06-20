@@ -1,2 +1,3 @@
 another tool using service
 changes to tool
+using new methods from service
