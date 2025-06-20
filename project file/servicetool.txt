@@ -1,0 +1,3 @@
+tool using service
+started using new methods created in service
+add logging to tool
