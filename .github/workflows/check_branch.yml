@@ -10,10 +10,10 @@ on:
 
 jobs:
   build:
+    if: github.base_ref == 'master' && github.head_ref != 'dev'
     runs-on: ubuntu-latest
     steps:
-      - name: Check branch
-        if: github.base_ref == 'master' && github.head_ref != 'dev'
+      - name: Deny merge from non-dev
         run: |
           echo "Permission error: Cannot merge onto master from branch other than dev"
           exit 1
